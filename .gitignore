@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+target/
+
+# IDE
+.idea/
+.vscode/
+.kiro/
+.claude/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tauri
+src-tauri/target/
+.tauri-updater-key
+.tauri-updater-key.pub
+.tauri-updater-password
+.tauri-updater-password.pub
+
+# Logs
+*.log
+
+docs/
+.tmp/
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Downloaded files
+scripts/
+src-tauri/clippy_warnings.txt
+1.json
+
+# Worktrees
+.worktrees/
+
+# Temporary local source mirrors
+.tmp/
+
+.breezell/
+
+vite.config.js.timestamp-*
+src-tauri/debug_responses/
+
+# Local agent knowledge mirror (do not push)
+MEMORY.md
+
+# Codegraph index (local tool artifact)
+.codegraph/
+
+# Rust target directories (including custom profiles)
+src-tauri/target-*

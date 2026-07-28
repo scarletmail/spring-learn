@@ -1,0 +1,23 @@
+[build]
+# 增量编译（开发时加速）
+incremental = true
+# pipelined 编译（Rust 1.90+ 稳定特性，减少等待时间）
+pipelining = true
+
+# Linux 使用 lld 链接器（比默认 ld 快 3-5 倍）
+# Windows 使用默认 link.exe（MSVC，最稳定）
+# macOS 使用默认 Apple ld（Xcode 15+ 已是 ld-prime，足够快）
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+[target.aarch64-unknown-linux-gnu]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+# 网络配置
+[net]
+# 使用 git CLI 而非内置 git（更快）
+git-fetch-with-cli = true
+
+# 注册表配置
+[registries.crates-io]
+protocol = "sparse"  # 使用稀疏索引（更快）
