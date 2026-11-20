@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <b>🚀 智能管理 Kiro IDE 账号，一键切换，配额监控，账号管理，网关，企业号bug、</b>
+  <b>🚀 智能管理 Kiro IDE 账号，一键切换，配额监控，账号管理，网关，企业号bug等、</b>
 </p>
 
 <p align="center">
